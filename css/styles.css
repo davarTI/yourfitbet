@@ -1,0 +1,788 @@
+﻿/***************************************** Generic styles */
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    width: 84%;
+    margin: auto;
+}
+.feautured, .categories{
+    position: relative;
+    padding: 2rem;
+}
+#section-product{
+    width: 100%;
+}
+
+/***************************************** Cristian's code */​
+.max_width_100{
+    max-width: 75%;
+}
+.width_100{
+    max-width: 100%;
+}
+.max_width_75{
+    max-width: 75%;
+}
+.min_height_600{
+    min-height: 600px;
+}
+.min_height_450{
+    min-height:450px;
+}
+.min_height_350{
+    min-height:350px;
+}
+.height_350{
+    height:350px;
+}
+.width_90{
+    width: 90%;
+}
+.min_height_400{
+    min-height: 400px;
+}
+
+.contenedor_card {
+    overflow-y: scroll;
+}
+.contenedor_card::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+    /* display: none;  Ocultar scroll */
+}
+.contenedor_card::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+.contenedor_card::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+/* Cambiamos el fondo cuando esté en active */
+.contenedor_card::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}
+
+/******************************************* David's code */
+.categories img{
+    height: 100%;
+    width: 100%;
+}
+.search{
+    border-width: 0 0 1px 0;
+    border-color: grey;
+    border-radius: 0;
+    box-shadow: 0;
+    min-width: 95%;
+    border-bottom-color: black;
+}
+.icon-search{
+    color: #03A9F4;
+}
+.overlay{
+    position: absolute;
+    background:linear-gradient(180deg,#ffc371,#ff5f6d);
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+.card-img-overlay:hover{
+    /* position: absolute; */
+    background:linear-gradient(180deg,#ff5f6d,#ffc371);
+    opacity: 1;
+}
+.icon-size-card{
+    font-size: 3rem;
+}
+
+/********************************************* Carlos's code */
+.intro-2 {
+    background-image: linear-gradient(to left, #ff5f6d,#ffc371);
+    background-size: cover;
+    min-height: 60vh;
+    width: 100vw;
+    /* position: absolute; */
+}
+
+.display-4mio
+{
+    padding-top: 6rem;
+    color:white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    float: inline;
+}
+
+.white
+{
+    background-color: white !important;
+    color:salmon;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size:2rem;
+    border:none;
+    width: 25rem;
+    height:5rem;
+    margin-bottom: 5rem;
+    margin-left: 10rem;
+}
+
+.titulo
+{
+    /* padding:4rem; */
+    margin-top: 7rem;
+    margin-right: 41rem;
+    margin-left: 7rem;
+    margin-bottom: 7rem;
+    color:white;
+    font-weight: bold;
+}
+
+/* .footer
+{
+    background: #f8f9fa !important;
+    display: bottom;
+    font-size: 2rem;
+    padding:4rem;
+} */
+
+.linked
+{
+    color:orangered;
+    font-size: 2rem;
+    text-align: left !important;
+    align-content: flex-start;
+}
+
+.icono
+{
+    width: 2rem !important;
+    height: 2rem !important;
+    padding: 1rem;
+    padding-top: 1rem;
+    color: white;
+    font-size: 1.8rem;
+    display: block;
+}
+
+.searching
+{
+    display: flex;
+    position: relative;
+    margin:0px;
+}
+
+.texto
+{
+    color:white;
+    display: inline-block;
+    position: relative;
+    padding: 3rem;
+    font-weight: bold;
+    margin-top: -3rem;
+    font-size: 3rem;
+    margin-left: 10rem;
+}
+
+.busqueda
+{
+    background: transparent;
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: white !important;
+    background-color: transparent !important;
+    background-image: none;
+    border: 1px solid transparent !important;
+    border-top: none !important;
+    border-bottom: solid white 1.2px!important;
+    border-radius: 4px;
+    box-shadow: none !important;
+    margin-left: 4rem;
+}
+
+.busqueda::-webkit-input-placeholder { /* Edge */
+    color: white;
+  }
+  
+.busqueda:-ms-input-placeholder { /* Internet Explorer */
+    color: white;
+  }
+  
+.busqueda::placeholder {
+    color: white;
+  }
+
+.mi-div{
+    display: grid;
+    grid-template-columns: 30% 10% auto;
+}
+
+
+@media  (max-width:576px) and (min-width: 10px) { 
+
+    .intro-2 {
+        background-image: linear-gradient(to left, #ff5f6d,#ffc371);
+        background-size: cover;
+        min-height: 60vh;
+        width: 100vw;
+        /* position: absolute; */
+    }
+    
+    .display-4mio
+    {
+        padding-top: 6rem;
+        color:white;
+        font-weight: bold;
+        text-align: center;
+        font-size: 3rem;
+        margin-left: 7rem;
+        margin-right: 7rem;
+        float: inline;
+    }
+    
+    .white
+    {
+        background-color: white !important;
+        color:salmon;
+        font-weight: bold;
+        font-family: sans-serif;
+        font-size:2rem;
+        border:none;
+        width: 25rem;
+        height:5rem;
+        margin-bottom: 5rem;
+        margin-left: 11rem;
+    }
+    
+    .titulo
+    {
+        /* padding:4rem; */
+        margin-top: 7rem;
+        margin-right: 41rem;
+        margin-left: 17rem;
+        margin-bottom: 7rem;
+        color:white;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    /* .footer
+    {
+        background: #f8f9fa !important;
+        display: bottom;
+        font-size: 2rem;
+        padding:4rem;
+    } */
+    
+    .linked
+    {
+        color:orangered;
+        font-size: 2rem;
+        text-align: left !important;
+        align-content: flex-start;
+    }
+    
+    .icono
+    {
+        width: 2rem !important;
+        height: 2rem !important;
+        padding: 1rem;
+        padding-top: 1rem;
+        color: white;
+        font-size: 1.8rem;
+        display: block;
+        margin-right: 2rem;
+    }
+    
+    .searching
+    {
+        display: flex;
+        position: relative;
+        margin:0px;
+    }
+    .texto
+    {
+        color:white;
+        display: inline-block;
+        position: relative;
+        padding: 3rem;
+        font-weight: bold;
+        margin-top: -3rem;
+        font-size: 3rem;
+        margin-left: 19rem;
+    }
+    
+    .busqueda
+    {
+        background: transparent;
+        display: flex;
+        width: 100%;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: white !important;
+        background-color: transparent !important;
+        background-image: none;
+        border: 1px solid transparent !important;
+        border-top: none !important;
+        border-bottom: solid white 1.2px!important;
+        border-radius: 4px;
+        box-shadow: none !important;
+        margin-left: 14rem;
+        margin-right: 10rem;
+        margin-bottom: 4rem;
+    }
+    
+    .busqueda::-webkit-input-placeholder { /* Edge */
+        color: white;
+    }
+      
+    .busqueda:-ms-input-placeholder { /* Internet Explorer */
+        color: white;
+    }
+      
+    .busqueda::placeholder {
+        color: white;
+    }
+
+    .mi-div{
+        display: inline;
+    }
+      
+    #specialIcon{
+        display: none;
+    }
+
+    .icon-search{
+        display: none;
+    }
+
+    #listings{
+        display: none;
+    }
+}
+
+@media (max-width:768px) and (min-width: 577px) {  
+    
+    .intro-2
+    {
+        background-image: linear-gradient(to left, #ff5f6d,#ffc371);
+        background-size: cover;
+        min-height: 60vh;
+        width: 100vw;
+        /* position: absolute; */
+    }
+    
+    .display-4mio
+    {
+        padding-top: 6rem;
+        color:white;
+        font-weight: bold;
+        text-align: center;
+        font-size: 3rem;
+        margin-left: 7rem;
+        margin-right: 7rem;
+        float: inline;
+    }
+    
+    .white
+    {
+        background-color: white !important;
+        color:salmon;
+        font-weight: bold;
+        font-family: sans-serif;
+        font-size:2rem;
+        border:none;
+        width: 25rem;
+        height:5rem;
+        margin-bottom: 5rem;
+        margin-left: 15rem;
+    }
+    
+    .titulo
+    {
+        /* padding:4rem; */
+        margin-top: 7rem;
+        margin-right: 10rem;
+        margin-left: 11rem;
+        margin-bottom: 7rem;
+        color:white;
+        font-weight: bold;
+        text-align: center;    
+    }
+/*     
+    .footer
+    {
+        background: #f8f9fa !important;
+        display: bottom;
+        font-size: 2rem;
+        padding:4rem;
+    } */
+    
+    .linked
+    {
+    color:orangered;
+    font-size: 2rem;
+    text-align: left !important;
+    align-content: flex-start;
+    }
+    
+    .icono
+    {
+        width: 2rem !important;
+        height: 2rem !important;
+        padding: 1rem;
+        padding-top: 1rem;
+        color: white;
+        font-size: 1.8rem;
+        display: block;
+        margin-right: 5rem;
+    }
+    
+    .searching
+    {
+        display: flex;
+        position: relative;
+        margin:0px;
+    }
+
+    .texto
+    {
+        color:white;
+        display: inline-block;
+        position: relative;
+        padding: 3rem;
+        font-weight: bold;
+        margin-top: 2rem;
+        font-size: 3rem;
+        margin-left: 22rem;   
+    }
+    
+    .busqueda
+    {
+        background: transparent;
+        display: block;
+        width: 100%;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: white !important;
+        background-color: transparent !important;
+        background-image: none;
+        border: 1px solid transparent !important;
+        border-top: none !important;
+        border-bottom: solid white 1.2px!important;
+        border-radius: 4px;
+        box-shadow: none !important;
+        margin-left: 18rem;
+        margin-right: 10rem;
+    }
+    
+    .busqueda::-webkit-input-placeholder { /* Edge */
+        color: white;
+    }
+      
+    .busqueda:-ms-input-placeholder { /* Internet Explorer */
+        color: white;
+    }
+      
+    .busqueda::placeholder {
+        color: white;
+    }
+    
+    .mi-div{
+        display: inline;   
+    }
+
+    #specialIcon{
+        display: none;
+    }
+
+ }
+
+@media  (max-width:992px) and (min-width: 769px) { 
+
+    .intro-2 {
+        background-image: linear-gradient(to left, #ff5f6d,#ffc371);
+        background-size: cover;
+        min-height: 60vh;
+        width: 100vw;
+        /* position: absolute; */
+    }
+     
+    .display-4mio
+    {
+        padding-top: 6rem;
+        color:white;
+        font-weight: bold;
+        text-align: center;
+        font-size: 3rem;
+        margin-left: 7rem;
+        margin-right: 7rem;
+        float: inline;
+    }
+    
+    .white
+    {
+        background-color: white !important;
+        color:salmon;
+        font-weight: bold;
+        font-family: sans-serif;
+        font-size:2rem;
+        border:none;
+        width: 25rem;
+        height:5rem;
+        margin-bottom: 5rem;
+        margin-left: 10rem;
+        margin-right: -12rem;
+    }
+    
+    .titulo
+    {
+        /* padding:4rem; */
+        margin-top: 7rem;
+        margin-right: 20rem;
+        margin-left: 15rem;
+        margin-bottom: 7rem;
+        color:white;
+        font-weight: bold;
+    }
+    
+    /* .footer
+    {
+        background: #f8f9fa !important;
+        display: bottom;
+        font-size: 2rem;
+        padding:4rem;
+    }
+     */
+    .linked
+    {
+        color:orangered;
+        font-size: 2rem;
+        text-align: left !important;
+        align-content: flex-start;
+    }
+    
+    .icono
+    {
+        width: 2rem !important;
+        height: 2rem !important;
+        padding: 1rem;
+        padding-top: 1rem;
+        color: white;
+        font-size: 1.8rem;
+        display: block;
+        margin-left:3rem;
+    }
+    
+    .searching
+    {
+        display: flex;
+        position: relative;
+        margin-left:4rem;
+        width: 100%;
+    }
+
+    .texto
+    {
+        color:white;
+        display: inline-block;
+        position: relative;
+        padding: 3rem;
+        font-weight: bold;
+        margin-top: -3rem;
+        font-size: 3rem;
+        margin-left: 5rem;
+        margin-right: 10rem;
+    }
+
+    .elboton{
+        padding-left:3rem;
+    }
+    
+    .busqueda
+    {
+        background: transparent;
+        display: block;
+        width: 100%;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: white !important;
+        background-color: transparent !important;
+        background-image: none;
+        border: 1px solid transparent !important;
+        border-top: none !important;
+        border-bottom: solid white 1.2px!important;
+        border-radius: 4px;
+        box-shadow: none !important;
+        margin-left: 4rem;   
+    }
+    
+    .busqueda::-webkit-input-placeholder { /* Edge */
+        color: white;
+    }
+      
+    .busqueda:-ms-input-placeholder { /* Internet Explorer */
+        color: white;
+    }
+      
+    .busqueda::placeholder {
+        color: white;
+    }
+    
+    .mi-div{
+        display: grid;
+        grid-template-columns: 30% 10% auto;
+    }
+ }
+
+
+
+ @media (max-width:1200px) and (min-width: 993px)  { 
+
+    .intro-2 {
+        background-image: linear-gradient(to left, #ff5f6d,#ffc371);
+        background-size: cover;
+        min-height: 60vh;
+        width: 100vw;
+        /* position: absolute; */
+    }
+    
+    .display-4mio
+    {
+        padding-top: 6rem;
+        color:white;
+        font-weight: bold;
+        text-align: center;
+        font-size: 3rem;
+        margin-left: 7rem;
+        margin-right: 7rem;
+        float: inline;
+    }
+    
+    .white
+    {
+        background-color: white !important;
+        color:salmon;
+        font-weight: bold;
+        font-family: sans-serif;
+        font-size:2rem;
+        border:none;
+        width: 25rem;
+        height:5rem;
+        margin-bottom: 5rem;
+        margin-left: 10rem;
+    }
+    
+    .titulo
+    {
+        /* padding:4rem; */
+        margin-top: 7rem;
+        margin-right: 41rem;
+        margin-left: 7rem;
+        margin-bottom: 7rem;
+        color:white;
+        font-weight: bold;
+    }
+    
+    /* .footer
+    {
+        background: #f8f9fa !important;
+        display: bottom;
+        font-size: 2rem;
+        padding:4rem;
+    }
+     */
+    .linked
+    {
+        color:orangered;
+        font-size: 2rem;
+        text-align: left !important;
+        align-content: flex-start;
+    }
+    
+    .icono
+    {
+        width: 2rem !important;
+        height: 2rem !important;
+        padding: 1rem;
+        padding-top: 1rem;
+        color: white;
+        font-size: 1.8rem;
+        display: block;  
+    }
+    
+    .searching
+    {
+        display: flex;
+        position: relative;
+        margin:0px;
+    }
+
+    .texto
+    {
+        color:white;
+        display: inline-block;
+        position: relative;
+        padding: 3rem;
+        font-weight: bold;
+        margin-top: -3rem;
+        font-size: 3rem;
+        margin-left: 10rem;
+    }
+    
+    .busqueda
+    {
+        background: transparent;
+        display: block;
+        width: 100%;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: white !important;
+        background-color: transparent !important;
+        background-image: none;
+        border: 1px solid transparent !important;
+        border-top: none !important;
+        border-bottom: solid white 1.2px!important;
+        border-radius: 4px;
+        box-shadow: none !important;
+        margin-left: 4rem;
+    }
+    
+    .busqueda::-webkit-input-placeholder { /* Edge */
+        color: white;
+    }
+      
+    .busqueda:-ms-input-placeholder { /* Internet Explorer */
+        color: white;
+    }
+      
+    .busqueda::placeholder {
+        color: white;
+    }
+    
+    .mi-div{
+        display: grid;
+        grid-template-columns: 30% 10% auto;
+    }
+}
